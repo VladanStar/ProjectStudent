@@ -1,1 +1,58 @@
-<p>create-student works!</p>
+<div class="container">
+  <div class="row">
+    <form [formGroup]="studentForm" (ngSubmit)="(onSubmit)" novalidate>
+      <div class="mb-3">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          formControlName="name"
+          class="form-control"
+          placeholder="Full name"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="name">Email</label>
+        <input
+          type="email"
+          formControlName="email"
+          class="form-control"
+          placeholder="email"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="student_course">Student Course</label>
+        <select
+          name="student_course"
+          id="student_course"
+          class="form-control form-select-lg mb-3"
+          formControlName="student_course"
+          placeholder="student_course"
+          required
+        >
+<option value="B-Tech" selected> B-Tech</option>
+<option value="BMA">BMA</option>
+<option value="MCA">MCA</option>
+<option value="M-Tech">M-Tech</option>
+      </select>
+      </div>
+      <div class="mb-3">
+        <label for="fees">Fees</label>
+        <input
+          type="number"
+          formControlName="fees"
+          class="form-control"
+          placeholder="fees"
+          required
+        />
+      </div>
+<div class="mb-3">
+<button type="submit" class="btn btn-primary " [disabled]="!studentForm.valid"> Create</button>
+&nbsp;&nbsp;&nbsp;
+<button type="reset" class="btn btn-danger">Reset</button>
+</div>
+    </form>
+  </div>
+</div>
