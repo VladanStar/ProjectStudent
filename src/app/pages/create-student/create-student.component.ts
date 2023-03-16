@@ -31,5 +31,6 @@ fees:['']
   onSubmit() {
     console.log('Vladan');
 this.studentService.createStudent(this.studentForm.value)
+console.log(this.studentForm)
   }
 }

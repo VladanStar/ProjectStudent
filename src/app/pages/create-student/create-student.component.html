@@ -32,11 +32,11 @@
           placeholder="student_course"
           required
         >
-<option value="B-Tech" selected> B-Tech</option>
-<option value="BMA">BMA</option>
-<option value="MCA">MCA</option>
-<option value="M-Tech">M-Tech</option>
-      </select>
+          <option value="B-Tech" selected>B-Tech</option>
+          <option value="BMA">BMA</option>
+          <option value="MCA">MCA</option>
+          <option value="M-Tech">M-Tech</option>
+        </select>
       </div>
       <div class="mb-3">
         <label for="fees">Fees</label>
@@ -48,11 +48,17 @@
           required
         />
       </div>
-<div class="mb-3">
-<button type="submit" class="btn btn-primary " [disabled]="!studentForm.valid"> Create</button>
-&nbsp;&nbsp;&nbsp;
-<button type="reset" class="btn btn-danger">Reset</button>
-</div>
+      <div class="mb-3">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="!studentForm.valid"
+        >
+          Create
+        </button>
+        &nbsp;&nbsp;&nbsp;
+        <button type="reset" class="btn btn-danger">Reset</button>
+      </div>
     </form>
   </div>
 </div>
