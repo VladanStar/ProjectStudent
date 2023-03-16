@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { CreateStudentComponent } from './pages/create-student/create-student.component';
 import { ListStudentComponent } from './pages/list-student/list-student.component';
 import { EditStudentComponent } from './pages/edit-student/edit-student.component';
+import { environment } from "src/environments/environment";
+import {AngularFireModule}from "@angular/fire/compat";
+import{AngularFirestoreModule} from "@angular/fire/compat/firestore";
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { EditStudentComponent } from './pages/edit-student/edit-student.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
