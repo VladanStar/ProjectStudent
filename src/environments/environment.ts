@@ -4,8 +4,13 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
-    // paste your own configs here
+  firebaseConfig : {
+    apiKey: "AIzaSyBzY7LIhgXnGYeCtKOnbkRVywGY58OAPP0",
+    authDomain: "studentdatabase-ba24d.firebaseapp.com",
+    projectId: "studentdatabase-ba24d",
+    storageBucket: "studentdatabase-ba24d.appspot.com",
+    messagingSenderId: "910503965117",
+    appId: "1:910503965117:web:82917595e6cb04756c22d4"
   }
 };
 
